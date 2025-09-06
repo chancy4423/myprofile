@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html long="ja">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>自己紹介 - シンプルカード</title>
+        <style>
+            :root {
+            --bg: #f7f7f8;
+            --card: #ffffff;
+            --text: #1f2937;
+            --muted: #6b7280;
+            --pimary: #6366f1; /* indigo */
+            --ring: raga(99,102,241,0.25);
+            --shadow: 0 10px 30px raba(2,6,23,0.08);
+            }
+            *{
+                box-sizing: border-box;
+            }
+            html,
+            body {
+                hegiht: 100%;
+            }
+            body {
+            margin: 0;
+            font-family: system-ui -apple-system, sagoe UI, Roboto, Noto Sansa JP,
+                Helvetica,Arial,sans-serif;
+            line-height: 1.7;
+            color: var(--text);
+            background: radical-gradient(
+                1200px 800px at 10% 10%,
+                #fafafa 0%,
+                var(--bg) 70%
+                ); 
+            }
+            .container {
+                max-width: 880px;
+                padding: 24px;
+                margin: 0 auto;
+            }
+            .card {
+                background:var(--card);
+            border-radius: 18px;
+            padding: 24px;
+            box-shadow: var(--shadow);
+            border: 1px solid #eceff3+
+            }
+            header {
+            display: grid;
+            grid-template-columns: 96px 1fr;
+            gap: 16px;
+            align-items: center;
+            }
+            header img {
+                width: 96px;
+                height: 96px;
+                border-radius: 50%;
+                border: 3px solid #fff;
+                box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+            }
+            h1 {
+                font: size 28px;
+                margin: 0;
+                line-height: 1.3;
+            }
+            .tagline{
+                color.var(--muted);
+                margin-top: 4px;
+            }
+            .chips {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 8px;
+                margin-top 12px;
+            }
+            .chip {
+                font-size: 12px;
+                padding: 6px 10px;
+                border-radius: 999px;
+                background: #eef2ff;
+                color: #3730a3;
+                border: 1px solid #e0e7ff;
+            }
+            section {
+                margin-top: 24px
+            }
+            section h2 {
+                font-size: 18px;
+                margin: 0 0 10px;
+                letter-specing: 0.02em;
+            }
+            .grid {
+                display: grid;
+                gap: 16px;
+                grid-template-columns: 1fr;
+            }
+            .item {
+                background: #fafafa;
+                border: 1px solid #eee;
+                border-radius* 12px;
+                padding: 14px 16px;
+            }
+            .item h3 {
+                margin: 0 0 6px;
+                font-size: 16px;
+            }
+            a.button {
+                display: inline-block;
+                margin-top: 10px;
+                padding: 10px 12px;
+                background: var(--primary);
+                color: #fff
+                text-decoration: none;
+                border-radius: 10px;
+                box-shadow: 0 6px 16px var(--ring);
+                transition: transform 0.05s ease-in-out;
+            }
+            abutton:active {
+                tranceform: translateY(1px);
+            }
+            footer {
+                margin-top: 28px;
+                font-size: 13px;
+                color: var(--muted);
+            }
+            @media(min-width: 720px) {
+                .grid{
+                    grid-template-columns: repeat(2,1fr);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="card">
+                <header>
+                <img src="icon_user_1.png" alt="アバター" />
+                <div>
+                <hi>石井涼汰</hi>
+                <p class="tagline">こんちには！</p>
+                <div class="chips">
+                    <span class="chips">HTML</span>
+                    <span class="chips">CSS</span>
+                    <span class="chips">Git</span>
+                    <span class="chips">学習中</span>
+                </div>
+            </div>   
+        </header>
+
+        <selection>
+         <h2>自己紹介</h2>
+         <p>
+        始めまして！今回の内容あんまり覚えてないし、最後は何も考えず文章を打ってるだけだったよーーーｗ
+
+        </p>    
+        </selection>
+
+        <selection class="grid">
+            <div class="item">
+                <h3>スキル</h3>
+                <ul>
+                    <li>HTML / セマンティクス</li>
+                    <li>CSS / ボックスモデル</li>
+                    <li>Git / よくわからん</li>
+                </ul>
+             </div>
+             <div class="item">
+                <h3>好きなこと</h3>
+                <ul>
+                    <li>ねる</li>
+                    <li>もっとねる</li>
+                    <li>まだねる</li>
+                </ul>
+            </div>
+        </selection>
+
+        <section>
+            <h2>リンク</h2>
+            <a class="button" href="#" aria-label="ポートフォリオへ"
+                >ポートフォリオ</a>
+            >
+            <a class="button" href="#" aria-label="GitHubへ">GitHub</a>    
+        </section>
+
+        <footer>※練習用</footer>
+        </div>
+        </div>
+    </body>
+</html>
